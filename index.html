@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">TaskMate.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tasks" class="nav-link">Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+    <!-- Home Page -->
+<section id="home">
+
+    <div><h1>Welcome to Task Manager</h1></div>
+  
+<p>A simple tool to manage your daily tasks.</p>
+  <a href="#tasks"><button type="submit">Get Started</button></a>
+  
+</section>
+
+    <!-- Tasks Page -->
+    <section id="tasks">
+            <h2>Tasks</h2>
+               <input id="searchbar" 
+               onkeyup="search_task()" 
+               type="text" name="search" 
+               placeholder="Search tasks...">
+  <select id="sort-select">
+    <option value="">Sort by...</option>
+    <option value="status">Status</option>
+  </select>
+
+  <!-- <div id="task-list"></div> -->
+            <div id="taskFormContainer"></div>
+            
+            <ul id="taskList"></ul>
+
+
+            <!-- <select id="taskStatus" required>
+    <option value="todo">To Do</option>
+    <option value="inprogress">In Progress</option>
+    <option value="done">Done</option>
+    <option value="completed">Completed</option>
+</select> -->
+<label for="taskCompleted">Completed:</label>
+<input type="checkbox" id="taskCompleted">
+        </section> 
+
+<!-- About Page -->
+<section id="about">
+    <h1>About Us Page</h1>
+   <div class="about-page">
+  <section class="about-section">
+    
+    <h2>About the Task Management Application</h2>
+    <p>The Task Management Application is a web-based tool designed to help users effectively manage their daily tasks. This application allows users to create, read, update, and delete tasks, providing a streamlined way to keep track of their work and personal responsibilities.</p>
+  </section>
+  <section class="purpose-section">
+    <h2>Purpose of the Application</h2>
+    <p>The main objective of this application is to increase productivity and organization by providing a centralized platform for users to manage their tasks. Key features include a task list with detailed information, the ability to mark tasks as completed, and various sorting and filtering options to help users stay on top of their priorities.</p>
+  </section>
+</div> 
+</section>
+
+
+<!-- Contact Page -->
+<section id="contact">
+    <h1>Contact</h1>
+ <form
+  action="https://formspree.io/f/maygbloq"
+  method="POST"
+>
+<label>
+    Your Full Name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</section>
+
+<div><footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Task Manager App</strong> by <a href="#">Etenesh Gishamo</a>
+    
+    </p>
+    <div class="social-icons">
+      <a href="https://github.com/EteneshJeg" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com/in/etenesh-gishamo-1b13a2272" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer></div>
+
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
